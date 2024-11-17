@@ -1919,10 +1919,15 @@ footer .footer__eff {
   position: absolute;
   bottom: 0;
   left: 0;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 footer .footer__eff img {
-  width: 800px;
+  width: 300px;
+}
+@media (min-width: 720px) {
+  footer .footer__eff img {
+    width: 800px;
+  }
 }
 footer .footer__bg {
   opacity: 0.1;
@@ -3586,9 +3591,15 @@ section.section--login .section__form {
   border-radius: 10px;
   box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.07);
 }
+section.section--login .section__form .form__element {
+  margin-bottom: 20px;
+}
 section.section--login .section__form .form__buttons {
+  position: relative;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
@@ -3596,13 +3607,26 @@ section.section--login .section__form .form__buttons {
   margin-top: 0px;
   padding-top: 20px;
   border-top: 1px solid rgba(0,0,0,0.1);
+  margin-top: 40px;
+}
+@media (min-width: 720px) {
+  section.section--login .section__form .form__buttons {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
 }
 section.section--login .section__form .form__buttons .btn {
   max-width: 100%;
   width: 100%;
 }
 section.section--login .section__form .form__buttons .btn:first-child {
-  margin-right: 20px;
+  margin-bottom: 20px;
+}
+@media (min-width: 720px) {
+  section.section--login .section__form .form__buttons .btn:first-child {
+    margin-right: 20px;
+    margin-bottom: 0px;
+  }
 }
 section.section--clients {
   background-color: #fbfbfb;
