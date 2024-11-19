@@ -3677,8 +3677,8 @@ section.section--clients .section__clients .section__client .section__icon img {
 }
 @media (min-width: 720px) {
   section.section--clients .section__clients .section__client .section__icon img {
-    max-height: 40px;
-    max-width: 150px;
+    max-height: 80px;
+    max-width: 120px;
   }
 }
 section.section--media .section__eff {
